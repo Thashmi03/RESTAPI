@@ -6,9 +6,8 @@ import (
 	"github.com/gin-gonic/gin"
 )
 //paramter is pointer ref to gin engine
-func AppRoutes(router *gin.Engine) {
-	router.POST("/api/login/name", controllers.Login)
-	router.GET("/api/register",controllers.Register)
+func AppRoutesP(router *gin.Engine) {
+	router.GET("/api/loginp", controllers.LoginP)
+	// router.POST("/api/register")
 	// router.GET("/api/profile:id")
 }
-
